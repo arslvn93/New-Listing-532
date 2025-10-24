@@ -1,428 +1,601 @@
 /**
  * Site Configuration
  * This file contains all configurable content for the website
- * Last updated: 2025-09-05T06:30:10.202Z
+ * Last updated: 2025-10-24T19:27:22.395Z
  */
 
 // contactInfo configuration
 export const contactInfo = {
-    agent: {
-      name: "Arslan Ahmed",
-      photo: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757711141211-Headshot%20Arslan%20Andrew.jpg",
-      phone: "(416) 655-4850",
-      email: "arslan@salesgenius.co",
-      company: "Executive Homes Realty Inc",
-      license: "REALTOR®",
-      repo: "New-Listing-886",
-      companyAddress: "290 Traders Blvd E unit 1, Mississauaga, L4Z, 1W7, Canada",
-      companyLogo: "https://www.executivehomesrealty.ca/files/themeManager/9607/theme28/EHRB%20Transparent.png"
-    },
-    agent2: {
-      name: "Rick Sandhu",
-      photo: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757711141211-Headshot%20Arslan%20Andrew.jpg",
-      phone: "(416) 655-4850",
-      email: "rick@salesgenius.co",
-      company: "Sandhu Realty Inc",
-      license: "REALTOR®",
-    },
-    social: {
-      instagram: "https://instagram.com/executivehomesrealtyinc",
-      facebook: "https://facebook.com/executivehomesrealtyinc",
-      twitter: "https://twitter.com/executivehomesrealtyinc",
-      linkedin: "https://linkedin.com/company/executivehomesrealtyinc"
-    },
-    mapLocation: {
-      lat: 43.7,
-      lng: -79.4
-    },
-  };
+  agent: {
+    name: "Eric Palin",
+    photo: "https://app.salesgenius.co/api/user-images/c663e095-4887-4d9a-871f-93f4a6542527?v=c44b72ac62160ed4290f083ad82836145904c53f39c39270579752d91ccc0e95",
+    phone: "4035596847",
+    email: "eric.l.palin@gmail.com",
+    company: "RE/MAX House of Real Estate",
+    license: "RECO #84397152",
+    repo: "New-Listing-532"
+  },
+  social: {
+    instagram: "https://www.instagram.com/ericpalinyyc",
+    facebook: "https://www.facebook.com/ericpalinyyc",
+    twitter: "https://twitter.com/executivehomesrealtyinc",
+    linkedin: "https://linkedin.com/company/executivehomesrealtyinc"
+  }
+};
 
 // galleryImages configuration
 export const galleryImages = [
-    {
-      id: 1,
-      src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004589506-2912-80 John St-01.jpg",
-      alt: "Open concept living room with floor-to-ceiling windows at 80 John St #2912",
-      category: "interior"
-    },
-    {
-      id: 2,
-      src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004602781-2912-80 John St-04.jpg",
-      alt: "Living and dining area with southeast light at 80 John St #2912",
-      category: "interior"
-    },
-    {
-      id: 3,
-      src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004609515-2912-80 John St-14.jpg",
-      alt: "Gourmet kitchen with enlarged island and built-in power at 80 John St #2912",
-      category: "kitchen"
-    },
-    {
-      id: 4,
-      src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004627198-2912-80 John St-20.jpg",
-      alt: "Primary bedroom with skyline outlook at 80 John St #2912",
-      category: "bedroom"
-    },
-    {
-      id: 5,
-      src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004643105-2912-80 John St-11.jpg",
-      alt: "Luxury bathroom with floor-to-ceiling tile and modern fixtures at 80 John St #2912",
-      category: "bathroom"
-    }
-  ];
+  {
+    id: 1,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333738054-Tano-1807-16-Web-Res.jpg",
+    alt: "Property image 1",
+    category: "interior"
+  },
+  {
+    id: 2,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333738776-Tano-1807-13-Web-Res.jpg",
+    alt: "Property image 2",
+    category: "kitchen"
+  },
+  {
+    id: 3,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333739086-Tano-1807-9A-Web-Res.jpg",
+    alt: "Property image 3",
+    category: "bedroom"
+  },
+  {
+    id: 4,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333739795-Tano-1807-14A-Web-Res.jpg",
+    alt: "Property image 4",
+    category: "bathroom"
+  },
+  {
+    id: 5,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333740462-Tano-1807-11B-Web-Res.jpg",
+    alt: "Property image 5",
+    category: "exterior"
+  },
+  {
+    id: 6,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333740882-Tano-1807-7-Web-Res.jpg",
+    alt: "Property image 6",
+    category: "interior"
+  },
+  {
+    id: 7,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333741287-Tano-1807-5-Web-Res.jpg",
+    alt: "Property image 7",
+    category: "kitchen"
+  },
+  {
+    id: 8,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333741817-Tano-1807-22A-Web-Res.jpg",
+    alt: "Property image 8",
+    category: "bedroom"
+  },
+  {
+    id: 9,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333742234-Tano-1807-9B-Web-Res.jpg",
+    alt: "Property image 9",
+    category: "bathroom"
+  },
+  {
+    id: 10,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333742779-Tano-1807-3B-Web-Res.jpg",
+    alt: "Property image 10",
+    category: "exterior"
+  },
+  {
+    id: 11,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333743164-Tano-1807-3A-Web-Res.jpg",
+    alt: "Property image 11",
+    category: "interior"
+  },
+  {
+    id: 12,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333743718-Tano-1807-12B-Web-Res.jpg",
+    alt: "Property image 12",
+    category: "kitchen"
+  },
+  {
+    id: 13,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333744336-Tano-1807-22C-Web-Res.jpg",
+    alt: "Property image 13",
+    category: "bedroom"
+  },
+  {
+    id: 14,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333744767-Tano-1807-17B-Web-Res.jpg",
+    alt: "Property image 14",
+    category: "bathroom"
+  },
+  {
+    id: 15,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333745410-Tano-1807-2A-Web-Res.jpg",
+    alt: "Property image 15",
+    category: "exterior"
+  },
+  {
+    id: 16,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333745832-Tano-1807-10B-Web-Res.jpg",
+    alt: "Property image 16",
+    category: "interior"
+  },
+  {
+    id: 17,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333746347-Tano-1807-17-Web-Res.jpg",
+    alt: "Property image 17",
+    category: "kitchen"
+  },
+  {
+    id: 18,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333746849-Tano-1807-19B-Web-Res.jpg",
+    alt: "Property image 18",
+    category: "bedroom"
+  },
+  {
+    id: 19,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333747259-Tano-1807-20-Web-Res.jpg",
+    alt: "Property image 19",
+    category: "bathroom"
+  },
+  {
+    id: 20,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333747639-Tano-1807-4-Web-Res.jpg",
+    alt: "Property image 20",
+    category: "exterior"
+  },
+  {
+    id: 21,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333748015-Tano-1807-6B-Web-Res.jpg",
+    alt: "Property image 21",
+    category: "interior"
+  },
+  {
+    id: 22,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333748560-Tano-1807-10C-Web-Res.jpg",
+    alt: "Property image 22",
+    category: "kitchen"
+  },
+  {
+    id: 23,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333749095-Tano-1807-24-Web-Res.jpg",
+    alt: "Property image 23",
+    category: "bedroom"
+  },
+  {
+    id: 24,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333749449-Tano-1807-11A-Web-Res.jpg",
+    alt: "Property image 24",
+    category: "bathroom"
+  },
+  {
+    id: 25,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333749953-Tano-1807-24B-Web-Res.jpg",
+    alt: "Property image 25",
+    category: "exterior"
+  },
+  {
+    id: 26,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333750303-Tano-1807-8-Web-Res.jpg",
+    alt: "Property image 26",
+    category: "interior"
+  },
+  {
+    id: 27,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333750833-Tano-1807-1C-Full-Res.jpg",
+    alt: "Property image 27",
+    category: "kitchen"
+  },
+  {
+    id: 28,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333752209-Tano-1807-1-Web-Res.jpg",
+    alt: "Property image 28",
+    category: "bedroom"
+  },
+  {
+    id: 29,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333752609-Tano-1807-6C-Web-Res.jpg",
+    alt: "Property image 29",
+    category: "bathroom"
+  },
+  {
+    id: 30,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333753137-Tano-1807-23-Web-Res.jpg",
+    alt: "Property image 30",
+    category: "exterior"
+  },
+  {
+    id: 31,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333753582-Tano-1807-10A-Web-Res.jpg",
+    alt: "Property image 31",
+    category: "interior"
+  },
+  {
+    id: 32,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333754028-Tano-1807-18B-Web-Res.jpg",
+    alt: "Property image 32",
+    category: "kitchen"
+  },
+  {
+    id: 33,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333754326-Tano-1807-19-Web-Res.jpg",
+    alt: "Property image 33",
+    category: "bedroom"
+  },
+  {
+    id: 34,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333754703-Tano-1807-1B-Full-Res.jpg",
+    alt: "Property image 34",
+    category: "bathroom"
+  },
+  {
+    id: 35,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333756122-Tano-1807-15A-Web-Res.jpg",
+    alt: "Property image 35",
+    category: "exterior"
+  },
+  {
+    id: 36,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333756522-Tano-1807-2B-Web-Res.jpg",
+    alt: "Property image 36",
+    category: "interior"
+  },
+  {
+    id: 37,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333757147-Tano-1807-22B-Web-Res.jpg",
+    alt: "Property image 37",
+    category: "kitchen"
+  },
+  {
+    id: 38,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333757618-Tano-1807-18-Web-Res.jpg",
+    alt: "Property image 38",
+    category: "bedroom"
+  },
+  {
+    id: 39,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333757949-Tano-1807-14B-Web-Res.jpg",
+    alt: "Property image 39",
+    category: "bathroom"
+  },
+  {
+    id: 40,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333758506-Tano-1807-15B-Web-Res.jpg",
+    alt: "Property image 40",
+    category: "exterior"
+  },
+  {
+    id: 41,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333759026-Tano-1807-6-Web-Res.jpg",
+    alt: "Property image 41",
+    category: "interior"
+  },
+  {
+    id: 42,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333759482-Tano-1807-12-Web-Res.jpg",
+    alt: "Property image 42",
+    category: "kitchen"
+  },
+  {
+    id: 43,
+    src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333759925-Tano-1807-21-Web-Res.jpg",
+    alt: "Property image 43",
+    category: "bedroom"
+  }
+];
 
 // heroVideo configuration
-export const heroVideo = {
-    url: "https://www.yudiz.com/codepen/studio-r/bg-video.mp4",
-    type: "video/mp4",
-    autoplay: true,
-    loop: true,
-    muted: true,
-    playsInline: true
-  };
+// export const heroVideo = {
+//   url: "",
+//   type: "video/mp4",
+//   autoplay: true,
+//   loop: true,
+//   muted: true,
+//   playsInline: true
+// };
 
-// homeShowcaseSections configuration
+// homeShowcaseSections configuration  
 export const homeShowcaseSections = [
-    {
-      id: "section1",
-      title: "Glass-Framed Living",
-      description: "An airy open-concept living and dining space wrapped in true floor-to-ceiling windows delivers dramatic light, clean sightlines, and effortless flow for everyday comfort and entertaining.",
-      imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004643105-2912-80 John St-11.jpg"
-    },
-    {
-      id: "section2",
-      title: "Culinary Haven",
-      description: "Custom 2021 kitchen with enlarged island, storage on the seating side, and built-in outlet—perfect for prep, laptops, and hosting—finished with cohesive designer materials and fixtures.",
-      imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004602781-2912-80 John St-04.jpg",
-      tags: "Custom Kitchen, Island Seating, Modern Fixtures"
-    },
-    {
-      id: "section3",
-      title: "Primary Retreat",
-      description: "Quiet, well-proportioned bedroom offers serene rest with bright southeast light and easy access to a beautifully retiled bathroom featuring modern fixtures and floor-to-ceiling tile.",
-      imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004609515-2912-80 John St-14.jpg",
-      tags: "Serene Bedroom, Natural Light, Modern Bathroom"
-    },
-    {
-      id: "section4",
-      title: "Productive Workspace",
-      description: "A true den separates work from life—ideal for focused WFH, a guest nook, or reading lounge—without compromising the openness of the main living area.",
-      imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004643105-2912-80 John St-11.jpg",
-      tags: "Home Office, Flexible Space, Private Den"
-    }
-  ];
+  {
+    id: "section1",
+    title: "2 Bedrooms",
+    description: "Light and attention to detail.",
+    imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333738054-Tano-1807-16-Web-Res.jpg"
+  },
+  {
+    id: "section2",
+    title: "2.5 Bathrooms",
+    description: "",
+    imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333738776-Tano-1807-13-Web-Res.jpg"
+  },
+  {
+    id: "section3",
+    title: "1682 SqFt",
+    description: "Spacious living area with ample room for your lifestyle",
+    imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333739086-Tano-1807-9A-Web-Res.jpg"
+  },
+  {
+    id: "section4",
+    title: "$$1,524,900",
+    description: "",
+    imageUrl: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333739795-Tano-1807-14A-Web-Res.jpg"
+  }
+];
 
 // neighborhood configuration
 export const neighborhood = {
-    name: "Entertainment District",
-    city: "Toronto",
-    description: "Toronto's Entertainment District is the city's premier destination for culture, dining, and urban living, known for its vibrant atmosphere and world-class amenities.",
-    highlights: [
-      "Steps to theaters, dining, and entertainment venues",
-      "Direct access to PATH underground walkway",
-      "TTC subway and streetcar connections",
-      "Walk to financial district and shopping",
-      "Vibrant urban lifestyle with 95/100 walk score"
-    ]
-  };
+  name: "Calgary",
+  city: "Calgary",
+  description: "Calgary's premier destination for culture, dining, and urban living.",
+  highlights: [
+    "Steps to theaters, dining, and entertainment venues",
+    "Direct access to PATH underground walkway", 
+    "TTC subway and streetcar connections",
+    "Walk to financial district and shopping",
+    "Vibrant urban lifestyle with excellent walk score"
+  ]
+};
 
 // neighborhoodAmenities configuration
 export const neighborhoodAmenities = [
-    {
-      id: 1,
-      name: "Rabba Fine Foods King West",
-      distance: "0.2 miles",
-      category: "shopping",
-      iconName: "ShoppingBag"
-    },
-    {
-      id: 2,
-      name: "David Pecaut Square",
-      distance: "0.1 miles",
-      category: "recreation",
-      iconName: "Leaf"
-    },
-    {
-      id: 3,
-      name: "Ogden Junior Public School (TDSB)",
-      distance: "0.6 miles",
-      category: "education",
-      iconName: "School"
-    },
-    {
-      id: 4,
-      name: "Byblos Toronto",
-      distance: "0.2 miles",
-      category: "dining",
-      iconName: "Wine"
-    },
-    {
-      id: 5,
-      name: "Momofuku Noodle Bar",
-      distance: "0.4 miles",
-      category: "dining",
-      iconName: "Utensils"
-    },
-    {
-      id: 6,
-      name: "St Andrew Station (Line 1)",
-      distance: "0.4 miles",
-      category: "transportation",
-      iconName: "Train"
-    },
-    {
-      id: 7,
-      name: "The Adelaide Club",
-      distance: "0.5 miles",
-      category: "recreation",
-      iconName: "Users"
-    },
-    {
-      id: 8,
-      name: "PATH Financial District",
-      distance: "0.4 miles",
-      category: "business",
-      iconName: "Building"
-    }
-  ];
+  {
+    id: 1,
+    name: "Local Grocery Store",
+    distance: "0.2 miles",
+    category: "shopping",
+    iconName: "ShoppingBag"
+  },
+  {
+    id: 2,
+    name: "Nearby Park",
+    distance: "0.1 miles", 
+    category: "recreation",
+    iconName: "Leaf"
+  },
+  {
+    id: 3,
+    name: "Public School",
+    distance: "0.6 miles",
+    category: "education", 
+    iconName: "School"
+  },
+  {
+    id: 4,
+    name: "Fine Dining",
+    distance: "0.2 miles",
+    category: "dining",
+    iconName: "Wine"
+  },
+  {
+    id: 5,
+    name: "Casual Dining",
+    distance: "0.4 miles",
+    category: "dining",
+    iconName: "Utensils"
+  },
+  {
+    id: 6,
+    name: "Transit Station",
+    distance: "0.4 miles",
+    category: "transportation",
+    iconName: "Train"
+  }
+];
 
 // neighborhoodStats configuration
 export const neighborhoodStats = [
-    {
-      id: 1,
-      title: "Walk Score",
-      value: "95/100",
-      caption: "Walker's Paradise",
-      iconName: "BadgeCheck",
-      color: "bg-green-500"
-    },
-    {
-      id: 2,
-      title: "Transit Score",
-      value: "94/100",
-      caption: "Excellent Transit",
-      iconName: "Compass",
-      color: "bg-blue-500"
-    },
-    {
-      id: 3,
-      title: "School Rating",
-      value: "8/10",
-      caption: "Great Schools",
-      iconName: "School",
-      color: "bg-indigo-500"
-    },
-    {
-      id: 4,
-      title: "Commute Time",
-      value: "8 min",
-      caption: "To Financial District",
-      iconName: "Clock",
-      color: "bg-amber-500"
-    }
-  ];
+  {
+    id: 1,
+    title: "Walk Score",
+    value: "95/100",
+    caption: "Walker's Paradise",
+    iconName: "BadgeCheck",
+    color: "bg-green-500"
+  },
+  {
+    id: 2,
+    title: "Transit Score", 
+    value: "94/100",
+    caption: "Excellent Transit",
+    iconName: "Compass",
+    color: "bg-blue-500"
+  },
+  {
+    id: 3,
+    title: "School Rating",
+    value: "8/10", 
+    caption: "Great Schools",
+    iconName: "School",
+    color: "bg-indigo-500"
+  },
+  {
+    id: 4,
+    title: "Commute Time",
+    value: "8 min",
+    caption: "To Financial District",
+    iconName: "Clock", 
+    color: "bg-amber-500"
+  }
+];
 
 // openHouseBenefits configuration
 export const openHouseBenefits = [
-    {
-      id: 1,
-      title: "Detailed Floor Plans",
-      description: "Complete architectural layouts showing the 2 bedroom, 2 bathroom + den configuration with precise measurements and optimal room flow.",
-      iconName: "FileText"
-    },
-    {
-      id: 2,
-      title: "Recent Neighborhood Sales",
-      description: "Comparative market analysis of recent Condo Apartment sales in the Entertainment District, showing strong demand for larger, renovated suites.",
-      iconName: "BarChart2"
-    },
-    {
-      id: 3,
-      title: "School District Information",
-      description: "Comprehensive overview of TDSB and TCDSB options nearby, including Ogden Junior Public School and local secondary programs with ratings and enrollment details.",
-      iconName: "GraduationCap"
-    },
-    {
-      id: 4,
-      title: "Property Inspection Report",
-      description: "Professional assessment of the unit's condition, highlighting recent upgrades and maintenance history for informed decision-making.",
-      iconName: "CheckSquare"
-    },
-    {
-      id: 5,
-      title: "Financing Options Guide",
-      description: "Current mortgage rates and financing programs available for condo purchases, including first-time buyer incentives and down payment assistance.",
-      iconName: "DollarSign"
-    },
-    {
-      id: 6,
-      title: "Neighborhood Amenities Map",
-      description: "Interactive guide to nearby restaurants, shopping, entertainment venues, and transportation options within walking distance.",
-      iconName: "Map"
-    }
-  ];
+  {
+    id: 1,
+    title: "Detailed Floor Plans",
+    description: "Complete architectural layouts showing the 2 bedroom, 2.5 bathroom configuration with precise measurements.",
+    iconName: "FileText"
+  },
+  {
+    id: 2,
+    title: "Recent Neighborhood Sales",
+    description: "Comparative market analysis of recent Condo Apartment sales in Calgary.",
+    iconName: "BarChart2"
+  },
+  {
+    id: 3,
+    title: "School District Information", 
+    description: "N/A",
+    iconName: "GraduationCap"
+  },
+  {
+    id: 4,
+    title: "Property Inspection Report",
+    description: "Professional assessment highlighting recent upgrades and maintenance history.",
+    iconName: "CheckSquare"
+  },
+  {
+    id: 5,
+    title: "Financing Options Guide",
+    description: "Current mortgage rates and financing programs available for this price range.",
+    iconName: "DollarSign"
+  },
+  {
+    id: 6,
+    title: "Neighborhood Amenities Map",
+    description: "Interactive guide to nearby amenities and transportation options.",
+    iconName: "Map"
+  }
+];
 
 // openHouseDetails configuration
 export const openHouseDetails = {
-    nextDate: "",
-    time: "",
-    host: "Arslan Ahmed",
-    phone: "(416) 655-4850",
-    email: "info@80john.com",
-    ctaText: "RSVP for Open House",
-    virtualTourAvailable: true,
-    virtualTourUrl: "https://tours.openhousemedia.ca/sites/80-john-st-2912-toronto-on-m5v-3x4-15850296/branded"
-  };
+  nextDate: "Saturday, November 1, 2025",
+  time: "2:00 PM - 6:00 PM",
+  host: "Eric Palin",
+  phone: "4035596847",
+  email: "eric.l.palin@gmail.com",
+  ctaText: "RSVP for Open House",
+  virtualTourAvailable: false,
+  virtualTourUrl: "",
+  allOpenHouses: [{"date":"Saturday, November 1, 2025","time":"2:00 PM - 6:00 PM"},{"date":"Saturday, November 8, 2025","time":"2:00 PM - 4:00 PM"},{"date":"Friday, November 7, 2025","time":"4:00 PM - 7:00 PM"}]
+};
 
 // packageItems configuration
 export const packageItems = [
-    {
-      id: 1,
-      title: "Detailed Floor Plans",
-      description: "Complete architectural layouts showing the 2 bedroom, 2 bathroom + den configuration with precise measurements and optimal room flow.",
-      iconName: "FileText"
-    },
-    {
-      id: 2,
-      title: "Recent Neighborhood Sales",
-      description: "Comparative market analysis of recent Condo Apartment sales in the Entertainment District, showing strong demand for larger, renovated suites.",
-      iconName: "BarChart2"
-    },
-    {
-      id: 3,
-      title: "School District Information",
-      description: "Comprehensive overview of TDSB and TCDSB options nearby, including Ogden Junior Public School and local secondary programs with ratings and enrollment details.",
-      iconName: "GraduationCap"
-    },
-    {
-      id: 4,
-      title: "Property Feature List",
-      description: "Detailed inventory highlighting true floor-to-ceiling windows without bulkheads, cohesive $90K 2021 kitchen and bath renovation, and enlarged island with seating-side storage and built-in outlet.",
-      iconName: "CheckSquare"
-    },
-    {
-      id: 5,
-      title: "Utility Cost Estimates",
-      description: "Estimated monthly utility expenses averaging $180 based on 1,249 sq ft, LED lighting, and efficient in-suite HVAC with programmable thermostat.",
-      iconName: "DollarSign"
-    },
-    {
-      id: 6,
-      title: "Local Amenities Guide",
-      description: "Curated directory of shopping, dining, recreation, and entertainment within walking distance of 80 John St #2912, including insider recommendations.",
-      iconName: "Map"
-    },
-    {
-      id: 7,
-      title: "Home Inspection Tips",
-      description: "Professional guidance focusing on the 2021 custom kitchen and fully retiled bathrooms, plus key mechanical and building systems to evaluate in a condo tower.",
-      iconName: "Search"
-    },
-    {
-      id: 8,
-      title: "Financing Resources",
-      description: "Mortgage pre-approval resources, down payment strategies, and competitive financing options for the $1,495,000 purchase price range.",
-      iconName: "CreditCard"
-    }
-  ];
+  {
+    id: 1,
+    title: "Detailed Floor Plans",
+    description: "Complete architectural layouts showing the 2 bedroom, 2.5 bathroom configuration with precise measurements.",
+    iconName: "FileText"
+  },
+  {
+    id: 2,
+    title: "Recent Neighborhood Sales",
+    description: "Comparative market analysis of recent Condo Apartment sales in Calgary.",
+    iconName: "BarChart2"
+  },
+  {
+    id: 3,
+    title: "School District Information", 
+    description: "N/A",
+    iconName: "GraduationCap"
+  },
+  {
+    id: 4,
+    title: "Property Inspection Report",
+    description: "Professional assessment highlighting recent upgrades and maintenance history.",
+    iconName: "CheckSquare"
+  },
+  {
+    id: 5,
+    title: "Financing Options Guide",
+    description: "Current mortgage rates and financing programs available for this price range.",
+    iconName: "DollarSign"
+  },
+  {
+    id: 6,
+    title: "Neighborhood Amenities Map",
+    description: "Interactive guide to nearby amenities and transportation options.",
+    iconName: "Map"
+  }
+];
 
 // property configuration
 export const property = {
-    name: "80 John St",
-    address: {
-      street: "88 John St #2912",
-      city: "Toronto",
-      state: "ON",
-      zip: "M5V 3X4",
-      country: "Canada"
-    },
-    price: "$1,495,000",
-    beds: 2,
-    baths: 2,
-    sqft: 1249,
-    lotSize: "30 x 120 ft",
-    yearBuilt: 2010,
-    type: "Condo Apartment",
-    status: "For Sale",
-    description: "Sophisticated condo apartment offering turnkey urban luxury, dramatic floor-to-ceiling glazing without bulkheads, cohesive 2021 renovations, and walk-to-everything convenience in Toronto's Entertainment District.",
-    shortDescription: "Turnkey luxury condo in Toronto’s Entertainment District with parking",
-    longDescription: "Elevated downtown living in a rare Loren-style 2+Den, 2-bath suite (1,249 sf) with true floor-to-ceiling windows—no bulkheads—delivering uninterrupted light and views. A cohesive $90K 2021 renovation reimagines the kitchen and bathrooms with designer finishes, an enlarged island with power, and consistent materiality. Enjoy southeast exposure, a usable 143 sf balcony, parking, and an owned locker. Steps to theatres, dining, PATH, TTC, and the financial core.",
-    mainFeatures: [],
-    propertyType: "Condo Apartment",
-    heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004589506-2912-80 John St-01.jpg",
-    heroCaption: "Turnkey luxury condo in Toronto’s Entertainment District with parking"
-  };
+  name: "1807, 108 9 Ave SW",
+  address: {
+    street: "1807, 108 9 Ave SW",
+    city: "Calgary",
+    state: "AB",
+    zip: "T2P 0T1",
+    country: "Canada"
+  },
+  price: "$1,524,900",
+  beds: 2,
+  baths: 2.5,
+  sqft: 1682,
+  lotSize: "30 x 120 ft",
+  yearBuilt: 2010,
+  type: "Condo Apartment",
+  status: "For Sale",
+  description: "A renowned Canadian luxury brand and its residential concept being completely transformed through a flawless renovation into a modern luxury. ",
+  shortDescription: "2 BEDS + 2.5 BATHS in Calgary",
+longDescription: "- Professionally Reimagined and completely renovated by recognized design firm Tano Studio. - South western exposure/views - Opulent finishes and the most prestigious amenities.  - The most detailed and attentive concierge in the industry. ",
+  mainFeatures: [],
+  propertyType: "Condo Apartment",
+  heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333738054-Tano-1807-16-Web-Res.jpg",
+  heroCaption: "Southwest Views + Concierge + Opulent Finishes = Your Perfect Luxury Condo Just Listed!"
+};
 
 // propertyFeatures configuration
 export const propertyFeatures = [
-    "Custom-designed kitchen with enlarged island, seating-side cabinet storage, and integrated power outlet for seamless cooking, work, and entertaining",
-    "Open-concept living and dining framed by true floor-to-ceiling glazing for maximum light, bigger views, and dramatic first impressions",
-    "Primary bedroom with generous proportions and bright southeast outlook for calm, comfortable rest",
-    "Designer-renovated bathrooms fully retiled floor-to-ceiling with new vanities, fixtures, and toilets for a luxe, cohesive look",
-    "Functional den offering a quiet, dedicated workspace or guest nook without compromising main living areas",
-    "Energy-efficient double-pane curtain-wall glazing and predominantly LED lighting for comfort and lower operating costs",
-    "Individually controlled in-suite HVAC with programmable thermostat for year-round climate control",
-    "Rare no-bulkhead design in principal rooms delivering uninterrupted glass and skyline wow factor",
-    "Consistent, designer-level finish across kitchen and baths elevating the entire home’s feel",
-    "143 sq ft balcony sized for real outdoor living—dining, lounging, and entertaining",
-    "Parking and owned locker provide turnkey downtown convenience and storage",
-    "Pre-wired for high-speed internet and smart-home ready for easy thermostat, lock, and lighting upgrades",
-    "Southeast exposure balances natural light and privacy without harsh late-afternoon glare",
-    "Cohesive 2021 renovation investment (~$90K) minimizing future maintenance and upgrade needs"
-  ];
+  "Behind the main door, there’s a private locker. This locker is a standout feature, providing a secure space for deliveries and a designated area for hanging dry cleaning! receive packages securely inside your abode or leave and retrieve dry cleaning.",
+  "This is an exclusive hotel style residence. Offering all the conveniences and amenities of the Luxury Hotel Les Germaine. At the touch of a button, from room service-events, spas - dining."
+];
 
 // siteBranding configuration
 export const siteBranding = {
-    logoUrl: "/logo.svg",
-    logoAlt: "80 John St",
-    favicon: "/favicon.ico",
-    colors: {
-      primary: "#D9A566",
-      primaryDark: "#8B6839",
-      primaryLight: "#E6C38C",
-      dark: "#111111",
-      light: "#FFFFFF"
-    },
-    heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004589506-2912-80 John St-01.jpg",
-    footer: {
-      copyrightText: "© 2024 80 John St. All rights reserved.",
-      disclaimer: "This website is for informational purposes only. Details are subject to change."
-    }
-  };
+  logoUrl: "/logo.svg",
+  logoAlt: "1807, 108 9 Ave SW",
+  favicon: "/favicon.ico",
+  colors: {
+    primary: "#D9A566",
+    primaryDark: "#8B6839", 
+    primaryLight: "#E6C38C",
+    dark: "#111111",
+    light: "#FFFFFF"
+  },
+  heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333738054-Tano-1807-16-Web-Res.jpg",
+  footer: {
+    copyrightText: "© 2024 1807, 108 9 Ave SW. All rights reserved.",
+    disclaimer: "This website is for informational purposes only. Details are subject to change."
+  }
+};
 
 // siteMetadata configuration
 export const siteMetadata = {
-    title: "80 John St #2912 | Turnkey Luxury Condo | Downtown Toronto",
-    description: "Turnkey 2+Den condo with no-bulkhead floor-to-ceiling windows, $90K 2021 renovation, 143 sf balcony, and parking in the Entertainment District. Book a tour.",
-    keywords: "condo apartment, Toronto real estate, Entertainment District, luxury condo, floor-to-ceiling windows, 2 bed plus den, parking included, virtual tour, $1,495,000",
-    ogImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1757004589506-2912-80 John St-01.jpg",
-    ogType: "website",
-    twitterCard: "summary_large_image",
-    canonical: "https://80john.com"
-  };
+  title: "1807, 108 9 Ave SW | Condo Apartment | Calgary",
+  description: "Southwest Views + Concierge + Opulent Finishes = Your Perfect Luxury Condo Just Listed!",
+  keywords: "condo apartment, Calgary real estate, 2 bedroom, 2.5 bathroom, $1,524,900",
+  ogImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333738054-Tano-1807-16-Web-Res.jpg",
+  ogType: "website",
+  twitterCard: "summary_large_image",
+  canonical: "https://1807,1089avesw.com"
+};
 
 // testimonials configuration
 export const testimonials = [
-    {
-      id: 1,
-      name: "David Chen",
-      role: "Recent Homebuyer",
-      content: "Arslan Ahmed guided us to a suite that feels bigger than the square footage. The true floor-to-ceiling windows and cohesive renovation were exactly what we wanted—plus parking in the heart of the city.",
-      avatar: "https://randomuser.me/api/portraits/men/22.jpg"
-    },
-    {
-      id: 2,
-      name: "Jennifer Liu",
-      role: "Interior Designer",
-      content: "The rare no-bulkhead glazing and consistent materials across the kitchen and baths show thoughtful design. The enlarged island with built-in power is both elegant and incredibly functional. Arslan presented every detail clearly.",
-      avatar: "https://randomuser.me/api/portraits/women/44.jpg"
-    },
-    {
-      id: 3,
-      name: "Mark Williams",
-      role: "Neighborhood Resident",
-      content: "Living in the Entertainment District, you appreciate walkability to theatres, TTC, and PATH. Suites like this, with real outdoor space and parking, are special. Arslan knows how to highlight what matters here.",
-      avatar: "https://randomuser.me/api/portraits/men/35.jpg"
-    }
-  ];
-
+  {
+    id: 1,
+    name: "David Chen",
+    role: "Recent Homebuyer", 
+    content: "Eric Palin provided exceptional service and found us exactly what we were looking for in Calgary.",
+    avatar: "https://randomuser.me/api/portraits/men/22.jpg"
+  },
+  {
+    id: 2,
+    name: "Jennifer Liu",
+    role: "Interior Designer",
+    content: "The attention to detail and quality of finishes in this property is outstanding. Eric Palin presented every detail clearly.",
+    avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+  },
+  {
+    id: 3,
+    name: "Mark Williams", 
+    role: "Neighborhood Resident",
+    content: "Living in this area, you appreciate the convenience and lifestyle. Eric Palin knows the market incredibly well.",
+    avatar: "https://randomuser.me/api/portraits/men/35.jpg"
+  }
+];
