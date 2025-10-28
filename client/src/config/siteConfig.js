@@ -1,7 +1,7 @@
 /**
  * Site Configuration
  * This file contains all configurable content for the website
- * Last updated: 2025-10-24T19:27:22.395Z
+ * Last updated: 2025-10-28T14:24:01.963Z
  */
 
 // contactInfo configuration
@@ -285,17 +285,7 @@ export const galleryImages = [
   }
 ];
 
-// heroVideo configuration
-// export const heroVideo = {
-//   url: "",
-//   type: "video/mp4",
-//   autoplay: true,
-//   loop: true,
-//   muted: true,
-//   playsInline: true
-// };
-
-// homeShowcaseSections configuration  
+// homeShowcaseSections configuration
 export const homeShowcaseSections = [
   {
     id: "section1",
@@ -325,15 +315,15 @@ export const homeShowcaseSections = [
 
 // neighborhood configuration
 export const neighborhood = {
-  name: "Calgary",
+  name: "Beltline",
   city: "Calgary",
-  description: "Calgary's premier destination for culture, dining, and urban living.",
+  description: "Beltline is Calgary’s energetic downtown neighbourhood, offering an urban lifestyle steps from Stephen Avenue’s shops, restaurants and entertainment. The area combines cultural assets — including the Olympic Plaza / Arts District and proximity to Arts Commons — with landmark attractions like the Calgary Tower and easy access to riverside green spaces such as Prince’s Island Park.",
   highlights: [
-    "Steps to theaters, dining, and entertainment venues",
-    "Direct access to PATH underground walkway", 
-    "TTC subway and streetcar connections",
-    "Walk to financial district and shopping",
-    "Vibrant urban lifestyle with excellent walk score"
+    "Steps from Stephen Avenue Walk, a vibrant pedestrian mall with shops, restaurants, and year‑round entertainment",
+    "Close to Olympic Plaza & the Arts District, with proximity to Arts Commons and seasonal public events",
+    "Nearby access to Prince’s Island Park and other riverfront green spaces for walking and festivals",
+    "Surrounded by downtown’s diverse dining scene, from coffee shops to acclaimed restaurants",
+    "Outstanding active-transport scores — Walker's Paradise, Excellent Transit and Biker's Paradise"
   ]
 };
 
@@ -341,45 +331,59 @@ export const neighborhood = {
 export const neighborhoodAmenities = [
   {
     id: 1,
-    name: "Local Grocery Store",
-    distance: "0.2 miles",
+    name: "Stephen Avenue Walk",
+    distance: "",
     category: "shopping",
     iconName: "ShoppingBag"
   },
   {
     id: 2,
-    name: "Nearby Park",
-    distance: "0.1 miles", 
+    name: "Prince's Island Park",
+    distance: "",
     category: "recreation",
     iconName: "Leaf"
   },
   {
     id: 3,
-    name: "Public School",
-    distance: "0.6 miles",
-    category: "education", 
+    name: "Bow Valley College",
+    distance: "",
+    category: "education",
     iconName: "School"
   },
   {
     id: 4,
-    name: "Fine Dining",
-    distance: "0.2 miles",
+    name: "Cafe Alchemist Inc",
+    distance: "",
     category: "dining",
-    iconName: "Wine"
+    iconName: "Coffee"
   },
   {
     id: 5,
-    name: "Casual Dining",
-    distance: "0.4 miles",
+    name: "Love Damian",
+    distance: "",
     category: "dining",
     iconName: "Utensils"
   },
   {
     id: 6,
-    name: "Transit Station",
-    distance: "0.4 miles",
+    name: "EB Centre Street Station (TD Free Fare Zone)",
+    distance: "",
     category: "transportation",
-    iconName: "Train"
+    iconName: "Car"
+  },
+  {
+    id: 7,
+    name: "Eau Claire Park",
+    distance: "",
+    category: "recreation",
+    iconName: "Users"
+  },
+  {
+    id: 8,
+    name: "Arts Commons",
+    distance: "",
+    category: "business",
+    iconName: "Wifi"
   }
 ];
 
@@ -388,34 +392,26 @@ export const neighborhoodStats = [
   {
     id: 1,
     title: "Walk Score",
-    value: "95/100",
+    value: "98/100",
     caption: "Walker's Paradise",
     iconName: "BadgeCheck",
     color: "bg-green-500"
   },
   {
     id: 2,
-    title: "Transit Score", 
-    value: "94/100",
+    title: "Transit Score",
+    value: "86/100",
     caption: "Excellent Transit",
     iconName: "Compass",
     color: "bg-blue-500"
   },
   {
     id: 3,
-    title: "School Rating",
-    value: "8/10", 
-    caption: "Great Schools",
-    iconName: "School",
-    color: "bg-indigo-500"
-  },
-  {
-    id: 4,
-    title: "Commute Time",
-    value: "8 min",
-    caption: "To Financial District",
-    iconName: "Clock", 
-    color: "bg-amber-500"
+    title: "Bike Score",
+    value: "91/100",
+    caption: "Biker's Paradise",
+    iconName: "Compass",
+    color: "bg-blue-500"
   }
 ];
 
@@ -435,7 +431,7 @@ export const openHouseBenefits = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "N/A",
     iconName: "GraduationCap"
   },
@@ -469,7 +465,20 @@ export const openHouseDetails = {
   ctaText: "RSVP for Open House",
   virtualTourAvailable: false,
   virtualTourUrl: "",
-  allOpenHouses: [{"date":"Saturday, November 1, 2025","time":"2:00 PM - 6:00 PM"},{"date":"Saturday, November 8, 2025","time":"2:00 PM - 4:00 PM"},{"date":"Friday, November 7, 2025","time":"4:00 PM - 7:00 PM"}]
+  allOpenHouses: [
+    {
+      date: "Saturday, November 1, 2025",
+      time: "2:00 PM - 6:00 PM"
+    },
+    {
+      date: "Saturday, November 8, 2025",
+      time: "2:00 PM - 4:00 PM"
+    },
+    {
+      date: "Friday, November 7, 2025",
+      time: "4:00 PM - 7:00 PM"
+    }
+  ]
 };
 
 // packageItems configuration
@@ -488,7 +497,7 @@ export const packageItems = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "N/A",
     iconName: "GraduationCap"
   },
@@ -532,7 +541,7 @@ export const property = {
   status: "For Sale",
   description: "A renowned Canadian luxury brand and its residential concept being completely transformed through a flawless renovation into a modern luxury. ",
   shortDescription: "2 BEDS + 2.5 BATHS in Calgary",
-longDescription: "- Professionally Reimagined and completely renovated by recognized design firm Tano Studio. - South western exposure/views - Opulent finishes and the most prestigious amenities.  - The most detailed and attentive concierge in the industry. ",
+  longDescription: "- Professionally Reimagined and completely renovated by recognized design firm Tano Studio. - South western exposure/views - Opulent finishes and the most prestigious amenities.  - The most detailed and attentive concierge in the industry. ",
   mainFeatures: [],
   propertyType: "Condo Apartment",
   heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333738054-Tano-1807-16-Web-Res.jpg",
@@ -552,7 +561,7 @@ export const siteBranding = {
   favicon: "/favicon.ico",
   colors: {
     primary: "#D9A566",
-    primaryDark: "#8B6839", 
+    primaryDark: "#8B6839",
     primaryLight: "#E6C38C",
     dark: "#111111",
     light: "#FFFFFF"
@@ -580,7 +589,7 @@ export const testimonials = [
   {
     id: 1,
     name: "David Chen",
-    role: "Recent Homebuyer", 
+    role: "Recent Homebuyer",
     content: "Eric Palin provided exceptional service and found us exactly what we were looking for in Calgary.",
     avatar: "https://randomuser.me/api/portraits/men/22.jpg"
   },
@@ -593,9 +602,10 @@ export const testimonials = [
   },
   {
     id: 3,
-    name: "Mark Williams", 
+    name: "Mark Williams",
     role: "Neighborhood Resident",
     content: "Living in this area, you appreciate the convenience and lifestyle. Eric Palin knows the market incredibly well.",
     avatar: "https://randomuser.me/api/portraits/men/35.jpg"
   }
 ];
+
