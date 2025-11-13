@@ -288,11 +288,11 @@ const PropertyShowcase = ({ showForSale = false, showOnlyHero = false }: Propert
     };
   }, []);
   
-  // Scroll to contact form section when CTA button is clicked
+  // Scroll to package section when CTA button is clicked
   const scrollToForm = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+    const packageSection = document.getElementById('package');
+    if (packageSection) {
+      packageSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
   
@@ -351,7 +351,7 @@ const PropertyShowcase = ({ showForSale = false, showOnlyHero = false }: Propert
               onClick={scrollToForm}
               className="mt-4 px-8 py-4 bg-white text-black font-light text-sm hover:bg-white/90 transition-colors"
             >
-              GET EXCLUSIVE HOME PACKAGE
+              Register for Open House
             </button>
           </div>
           

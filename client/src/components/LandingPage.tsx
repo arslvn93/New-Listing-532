@@ -187,10 +187,10 @@ const LandingPage = () => {
                     <path d="M22 2 11 13"></path>
                   </svg>
                 </div>
-                <h3 className="text-3xl font-['Poppins'] uppercase tracking-wider mb-3 text-white">Exclusive Offer</h3>
+                <h3 className="text-3xl font-['Poppins'] uppercase tracking-wider mb-3 text-white">Don't Miss Out!</h3>
                 <div className="h-1 w-16 bg-gradient-to-r from-[#D9A566] to-transparent mx-auto mb-3"></div>
                 <p className="text-white/70 font-['Titillium_Web'] text-lg max-w-md mx-auto">
-                  Get your premium home package with detailed information about {property.address.street} before it's gone!
+                  RSVP for our upcoming open house and receive exclusive property information!
                 </p>
               </motion.div>
               
@@ -240,9 +240,14 @@ const LandingPage = () => {
                   <button 
                     type="button" 
                     className="relative w-full bg-gradient-to-br from-[#D9A566] to-[#D9A566]/90 text-black font-['Poppins'] p-4 rounded-lg font-bold text-lg tracking-wider uppercase shadow-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(217,165,102,0.5)]"
-                    onClick={closeExitPopup}
+                    onClick={() => {
+                      closeExitPopup();
+                      setTimeout(() => {
+                        document.getElementById('package')?.scrollIntoView({ behavior: 'smooth' });
+                      }, 300);
+                    }}
                   >
-                    GET MY PREMIUM PACKAGE
+                    RSVP FOR OPEN HOUSE
                   </button>
                 </div>
                 

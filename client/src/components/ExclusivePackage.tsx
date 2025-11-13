@@ -206,7 +206,7 @@ const ExclusivePackage = () => {
         email: data.email,
         phone: data.phone,
         questions: questions,
-        source: 'Exclusive Package',
+        source: 'Open House Registration',
         repo: contactInfo.agent?.repo || '',
         agentEmail: contactInfo.agent?.email || '',
         propertyAddress: property?.address || undefined
@@ -296,7 +296,7 @@ const ExclusivePackage = () => {
             {/* Center: Simple Text */}
             <div className="hidden md:block">
               <p className="text-white text-sm font-medium">
-                Get Complete Property Package
+                Register for Open House
               </p>
             </div>
             
@@ -308,7 +308,7 @@ const ExclusivePackage = () => {
               className="px-6 py-2 rounded-lg text-black font-medium text-sm transition-all duration-200 flex items-center gap-2 shadow-lg"
               style={{ backgroundColor: primaryColor }}
             >
-              <span>Access Now</span>
+              <span>RSVP Now</span>
               <ArrowRight className="w-4 h-4" />
             </motion.button>
           </div>
@@ -358,10 +358,10 @@ const ExclusivePackage = () => {
                   <span className="text-white/60 text-xs uppercase tracking-wider">{property?.address?.street || 'Premium Package'}</span>
                   </motion.div>
                 <h2 className="text-3xl md:text-5xl font-light text-white mb-4 tracking-tight">
-                  Everything You Need to Know
+                  Register for Our Open House
                 </h2>
                 <p className="text-white/60 text-base md:text-lg leading-relaxed max-w-2xl">
-                  Get instant access to comprehensive property details, market analysis, and exclusive insights—all in one premium package.
+                  Register to attend our upcoming open house and receive exclusive property information, market analysis, and detailed insights—all in one premium package.
                 </p>
               </div>
               
@@ -413,7 +413,7 @@ const ExclusivePackage = () => {
                     <div className="mb-6">
                       <div className="flex items-center justify-between mb-2">
                         <h3 className="text-xl md:text-2xl font-medium text-white">
-                          Get Instant Access
+                          Register for Open House
                         </h3>
                         {formStep === 2 && (
                           <span className="text-white/40 text-xs">Step 2 of 4</span>
@@ -421,8 +421,8 @@ const ExclusivePackage = () => {
                       </div>
                       <p className="text-white/60 text-sm">
                         {formStep === 1 
-                          ? 'Enter your email to receive the complete package'
-                          : 'Just a few more details to send your package'}
+                          ? 'Enter your email to register for the open house'
+                          : 'Just a few more details to complete your registration'}
                       </p>
                     </div>
                     
@@ -561,7 +561,7 @@ const ExclusivePackage = () => {
                           </>
                         ) : (
                           <>
-                            Get Instant Access
+                            Register for Open House
                             <ArrowRight className="w-5 h-5" />
                           </>
                         )}
@@ -754,10 +754,10 @@ const ExclusivePackage = () => {
                     
                     {/* Success Message */}
                     <h3 className="text-2xl font-medium text-white mb-2">
-                      Package Sent!
+                      Registration Confirmed!
                     </h3>
                     <p className="text-white/60 text-sm mb-6">
-                      Check your inbox for the complete property details
+                      You're registered! Check your inbox for confirmation and your property package
                     </p>
                     
                     {/* What's Included List */}

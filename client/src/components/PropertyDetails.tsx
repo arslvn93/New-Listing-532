@@ -311,7 +311,7 @@ const PropertyDetails = () => {
                 {/* RSVP Button - Centered on Image */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <a 
-                    href="#contact" 
+                    href="#package" 
                     className="bg-white/95 backdrop-blur-sm text-black font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl text-lg"
                   >
                     <span className="flex items-center">
