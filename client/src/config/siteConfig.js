@@ -474,7 +474,7 @@ export const openHouseBenefits = [
 
 // openHouseDetails configuration
 export const openHouseDetails = {
-    nextDate: "Saturday, November 1, 2025",
+    nextDate: "Sunday, November 16, 2025",
     time: "3:00 PM - 6:00 PM",
     host: "Eric Palin",
     phone: "4035596847",
@@ -484,19 +484,19 @@ export const openHouseDetails = {
     virtualTourUrl: "",
     allOpenHouses: [
       {
-        date: "Saturday, November 1, 2025",
+        date: "Sunday, November 16, 2025",
         time: "3:00 PM - 6:00 PM"
       },
       {
-        date: "Saturday, November 8, 2025",
-        time: "3:00 PM - 4:00 PM"
+        date: "Sunday, November 16, 2025",
+        time: "3:00 PM - 6:00 PM"
       },
       {
-        date: "Friday, November 7, 2025",
-        time: "3:00 PM - 7:00 PM"
+        date: "Sunday, November 16, 2025",
+        time: "3:00 PM - 6:00 PM"
       }
     ],
-    date: "Saturday, November 1, 2025",
+    date: "Sunday, November 16, 2025",
     startTime: "3:00 PM",
     endTime: "6:00 PM",
     location: "1807, 108 9 Ave SW",
