@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'wouter';
+import { Link, useLocation } from 'wouter';
 import { property, siteBranding } from '../config/siteConfig';
 import { Menu } from 'lucide-react';
 
@@ -19,8 +19,17 @@ interface NavigationProps {
 const Navigation = ({ showForSale = false }: NavigationProps) => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [location] = useLocation();
   
   const { colors } = siteBranding;
+  
+  // Determine if we're on the openhouse page
+  const isOpenHousePage = location === '/openhouse';
+  
+  // Generate navigation link URLs based on current route
+  const getNavLink = (itemId: string) => {
+    return isOpenHousePage ? `/#${itemId}` : `#${itemId}`;
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,7 +62,7 @@ const Navigation = ({ showForSale = false }: NavigationProps) => {
               {navItems.map((item) => (
                 <li key={item.id}>
                   <a 
-                    href={`#${item.id}`} 
+                    href={getNavLink(item.id)} 
                     className={navLinkClasses}
                     style={{ 
                       '--hover-color': colors.primary 
@@ -81,7 +90,7 @@ const Navigation = ({ showForSale = false }: NavigationProps) => {
             {navItems.map((item) => (
               <li key={item.id}>
                 <a 
-                  href={`#${item.id}`} 
+                  href={getNavLink(item.id)} 
                   className={navLinkClasses}
                   onClick={() => setMobileMenuVisible(false)}
                   style={{ 
