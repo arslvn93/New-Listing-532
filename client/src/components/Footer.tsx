@@ -140,13 +140,13 @@ const Footer = () => {
               )}
             </div>
             {/* Privacy beneath socials on desktop only */}
-            <a href="#privacy" className="hidden lg:block text-[9px] text-white/30 hover:text-white/50 transition-colors">Privacy Policy</a>
+            <a href="https://blog.remax.ca/privacy-notice/" target="_blank" rel="noopener noreferrer" className="hidden lg:block text-[9px] text-white/30 hover:text-white/50 transition-colors">Privacy Policy</a>
           </div>
         </div>
         
         {/* Privacy at very bottom - Mobile only */}
         <div className="border-t border-white/5 py-2 text-center lg:hidden">
-          <a href="#privacy" className="text-[9px] text-white/30 hover:text-white/50 transition-colors">Privacy Policy</a>
+          <a href="https://blog.remax.ca/privacy-notice/" target="_blank" rel="noopener noreferrer" className="text-[9px] text-white/30 hover:text-white/50 transition-colors">Privacy Policy</a>
         </div>
       </div>
     </footer>
