@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 // @ts-ignore - JS config module without types
-import { property, siteBranding, contactInfo } from '../config/siteConfig';
-import { FileText, BarChart2, GraduationCap, CheckSquare, DollarSign, Map, Search, CreditCard, ArrowRight, Check, Clock, Users, Sparkles } from 'lucide-react';
+import { property, siteBranding, contactInfo, openHouseDetails } from '../config/siteConfig';
+import { FileText, BarChart2, GraduationCap, CheckSquare, DollarSign, Map, Search, CreditCard, ArrowRight, Check } from 'lucide-react';
 import { useMutation } from '@tanstack/react-query';
 import { apiRequest } from '@/lib/queryClient';
 import { useToast } from '@/hooks/use-toast';
@@ -127,6 +127,36 @@ const ExclusivePackage = () => {
     consent: false
   });
   
+  // Format date for success message: "Sunday, November 16, 2025" -> "Sunday Nov 16th"
+  const formatOpenHouseDate = (dateStr: string) => {
+    const monthMap: { [key: string]: string } = {
+      'January': 'Jan', 'February': 'Feb', 'March': 'Mar', 'April': 'Apr',
+      'May': 'May', 'June': 'Jun', 'July': 'Jul', 'August': 'Aug',
+      'September': 'Sep', 'October': 'Oct', 'November': 'Nov', 'December': 'Dec'
+    };
+    const parts = dateStr.split(', ');
+    const dayOfWeek = parts[0];
+    const monthDay = parts[1].split(' ');
+    const month = monthMap[monthDay[0]] || monthDay[0];
+    const day = monthDay[1];
+    const dayWithSuffix = day === '1' || day === '21' || day === '31' ? `${day}st` :
+                         day === '2' || day === '22' ? `${day}nd` :
+                         day === '3' || day === '23' ? `${day}rd` : `${day}th`;
+    return `${dayOfWeek} ${month} ${dayWithSuffix}`;
+  };
+  
+  // Format time for success message: "3:00 PM - 6:00 PM" -> "3-6pm"
+  const formatOpenHouseTime = (timeStr: string) => {
+    const times = timeStr.match(/(\d+):\d+\s*(AM|PM)/g);
+    if (times && times.length === 2) {
+      const startHour = parseInt(times[0].split(':')[0]);
+      const endHour = parseInt(times[1].split(':')[0]);
+      const period = times[0].includes('PM') ? 'pm' : 'am';
+      return `${startHour}-${endHour}${period}`;
+    }
+    return timeStr.replace(' PM', 'pm').replace(' - ', '-').replace(':00', '');
+  };
+
   // Validate fields in real-time
   useEffect(() => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -246,22 +276,29 @@ const ExclusivePackage = () => {
   
   // Handle question selection with auto-advance
   const handleQuestionSelect = (questionKey: 'buyingTimeline' | 'propertyType', value: string) => {
-    setFormData(prev => {
-      const updatedData = { ...prev, [questionKey]: value };
-      
-      // Auto-advance after selection with smooth delay
-      setTimeout(() => {
-        if (questionKey === 'buyingTimeline') {
-          setFormStep(4); // Go to Question 2
-        } else if (questionKey === 'propertyType') {
-          // Submit form after Question 2 with updated data
-          mutation.mutate(updatedData);
-        }
-      }, 400); // Slight delay for visual feedback
-      
-      return updatedData;
-    });
+    setFormData(prev => ({ ...prev, [questionKey]: value }));
+    
+    // Auto-advance after selection with smooth delay
+    setTimeout(() => {
+      if (questionKey === 'buyingTimeline') {
+        setFormStep(4); // Go to Question 2
+      }
+      // Note: Form submission is handled by useEffect when both questions are answered
+    }, 400); // Slight delay for visual feedback
   };
+  
+  // Auto-submit when both questions are answered
+  useEffect(() => {
+    if (formStep === 4 && formData.buyingTimeline && formData.propertyType && !mutation.isPending) {
+      // Small delay to ensure state is fully updated
+      const submitTimer = setTimeout(() => {
+        // Use the latest formData to ensure both question values are included
+        mutation.mutate(formData);
+      }, 100);
+      
+      return () => clearTimeout(submitTimer);
+    }
+  }, [formStep, formData, mutation]);
   
   // Handle phone input with auto-formatting
   const handlePhoneChange = (value: string) => {
@@ -757,42 +794,8 @@ const ExclusivePackage = () => {
                       Registration Confirmed!
                     </h3>
                     <p className="text-white/60 text-sm mb-6">
-                      You're registered! Check your inbox for confirmation and your property package
+                      You're registered for the Open House, see you on {openHouseDetails?.nextDate ? formatOpenHouseDate(openHouseDetails.nextDate) : 'Sunday Nov 16th'}, {openHouseDetails?.time ? formatOpenHouseTime(openHouseDetails.time) : '3-6pm'}
                     </p>
-                    
-                    {/* What's Included List */}
-                    <div className="text-left space-y-2 mb-6 bg-white/5 rounded-lg p-4">
-                      <p className="text-white/80 text-xs font-medium mb-3">You'll receive:</p>
-                      <div className="flex items-center gap-2 text-white/70 text-xs">
-                        <Sparkles className="w-3.5 h-3.5" style={{ color: primaryColor }} />
-                        <span>Floor plans & specifications</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-white/70 text-xs">
-                        <Sparkles className="w-3.5 h-3.5" style={{ color: primaryColor }} />
-                        <span>Market analysis report</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-white/70 text-xs">
-                        <Sparkles className="w-3.5 h-3.5" style={{ color: primaryColor }} />
-                        <span>Virtual tour access</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-white/70 text-xs">
-                        <Sparkles className="w-3.5 h-3.5" style={{ color: primaryColor }} />
-                        <span>Neighborhood insights</span>
-                      </div>
-                    </div>
-                    
-                    {/* Agent Follow-up */}
-                    <div className="pt-4 border-t border-white/5">
-                      <p className="text-white/50 text-xs mb-3">
-                        {contactInfo.agent.name} will follow up within 2 hours
-                      </p>
-                      <button
-                        onClick={() => setFormStep(1)}
-                        className="text-white/60 hover:text-white text-xs transition-colors"
-                      >
-                        Submit another request →
-                      </button>
-                    </div>
               </motion.div>
                 )}
               </div>
