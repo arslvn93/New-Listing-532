@@ -9,8 +9,8 @@ export const contactInfo = {
     agent: {
       name: "Eric Palin",
       photo: "https://app.salesgenius.co/api/user-images/c663e095-4887-4d9a-871f-93f4a6542527?v=c44b72ac62160ed4290f083ad82836145904c53f39c39270579752d91ccc0e95",
-      phone: "4035-596-847",
-      email: "eric@bestcalgaryhomes.com",
+      phone: "403-559-6847",
+      email: "eric.l.palin@gmail.com",
       company: "RE/MAX House of Real Estate",
       license: "RECO #84397152",
       repo: "New-Listing-532",
@@ -475,7 +475,7 @@ export const openHouseBenefits = [
 // openHouseDetails configuration
 export const openHouseDetails = {
     nextDate: "Saturday, November 1, 2025",
-    time: "2:00 PM - 6:00 PM",
+    time: "3:00 PM - 6:00 PM",
     host: "Eric Palin",
     phone: "4035596847",
     email: "eric.l.palin@gmail.com",
@@ -485,22 +485,22 @@ export const openHouseDetails = {
     allOpenHouses: [
       {
         date: "Saturday, November 1, 2025",
-        time: "2:00 PM - 6:00 PM"
+        time: "3:00 PM - 6:00 PM"
       },
       {
         date: "Saturday, November 8, 2025",
-        time: "2:00 PM - 4:00 PM"
+        time: "3:00 PM - 4:00 PM"
       },
       {
         date: "Friday, November 7, 2025",
-        time: "4:00 PM - 7:00 PM"
+        time: "3:00 PM - 7:00 PM"
       }
     ],
     date: "Saturday, November 1, 2025",
     startTime: "3:00 PM",
     endTime: "6:00 PM",
     location: "1807, 108 9 Ave SW",
-    registerLink: "#"
+    registerLink: "#package"
   };
 
 // packageItems configuration
