@@ -46,259 +46,259 @@ export const galleryImages = [
       id: 1,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333738054-Tano-1807-16-Web-Res.jpg",
       alt: "Property image 1",
-      category: "interior"
+      category: ""
     },
     {
       id: 2,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333738776-Tano-1807-13-Web-Res.jpg",
       alt: "Property image 2",
-      category: "kitchen"
+      category: ""
     },
     {
       id: 3,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333739086-Tano-1807-9A-Web-Res.jpg",
       alt: "Property image 3",
-      category: "bedroom"
+      category: ""
     },
     {
       id: 4,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333739795-Tano-1807-14A-Web-Res.jpg",
       alt: "Property image 4",
-      category: "bathroom"
+      category: ""
     },
     {
       id: 5,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333740462-Tano-1807-11B-Web-Res.jpg",
       alt: "Property image 5",
-      category: "exterior"
+      category: ""
     },
     {
       id: 6,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333740882-Tano-1807-7-Web-Res.jpg",
       alt: "Property image 6",
-      category: "interior"
+      category: ""
     },
     {
       id: 7,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333741287-Tano-1807-5-Web-Res.jpg",
       alt: "Property image 7",
-      category: "kitchen"
+      category: ""
     },
     {
       id: 8,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333741817-Tano-1807-22A-Web-Res.jpg",
       alt: "Property image 8",
-      category: "bedroom"
+      category: ""
     },
     {
       id: 9,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333742234-Tano-1807-9B-Web-Res.jpg",
       alt: "Property image 9",
-      category: "bathroom"
+      category: ""
     },
     {
       id: 10,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333742779-Tano-1807-3B-Web-Res.jpg",
       alt: "Property image 10",
-      category: "exterior"
+      category: ""
     },
     {
       id: 11,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333743164-Tano-1807-3A-Web-Res.jpg",
       alt: "Property image 11",
-      category: "interior"
+      category: ""
     },
     {
       id: 12,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333743718-Tano-1807-12B-Web-Res.jpg",
       alt: "Property image 12",
-      category: "kitchen"
+      category: ""
     },
     {
       id: 13,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333744336-Tano-1807-22C-Web-Res.jpg",
       alt: "Property image 13",
-      category: "bedroom"
+      category: ""
     },
     {
       id: 14,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333744767-Tano-1807-17B-Web-Res.jpg",
       alt: "Property image 14",
-      category: "bathroom"
+      category: ""
     },
     {
       id: 15,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333745410-Tano-1807-2A-Web-Res.jpg",
       alt: "Property image 15",
-      category: "exterior"
+      category: ""
     },
     {
       id: 16,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333745832-Tano-1807-10B-Web-Res.jpg",
       alt: "Property image 16",
-      category: "interior"
+      category: ""
     },
     {
       id: 17,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333746347-Tano-1807-17-Web-Res.jpg",
       alt: "Property image 17",
-      category: "kitchen"
+      category: ""
     },
     {
       id: 18,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333746849-Tano-1807-19B-Web-Res.jpg",
       alt: "Property image 18",
-      category: "bedroom"
+      category: ""
     },
     {
       id: 19,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333747259-Tano-1807-20-Web-Res.jpg",
       alt: "Property image 19",
-      category: "bathroom"
+      category: ""
     },
     {
       id: 20,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333747639-Tano-1807-4-Web-Res.jpg",
       alt: "Property image 20",
-      category: "exterior"
+      category: ""
     },
     {
       id: 21,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333748015-Tano-1807-6B-Web-Res.jpg",
       alt: "Property image 21",
-      category: "interior"
+      category: ""
     },
     {
       id: 22,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333748560-Tano-1807-10C-Web-Res.jpg",
       alt: "Property image 22",
-      category: "kitchen"
+      category: ""
     },
     {
       id: 23,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333749095-Tano-1807-24-Web-Res.jpg",
       alt: "Property image 23",
-      category: "bedroom"
+      category: ""
     },
     {
       id: 24,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333749449-Tano-1807-11A-Web-Res.jpg",
       alt: "Property image 24",
-      category: "bathroom"
+      category: ""
     },
     {
       id: 25,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333749953-Tano-1807-24B-Web-Res.jpg",
       alt: "Property image 25",
-      category: "exterior"
+      category: ""
     },
     {
       id: 26,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333750303-Tano-1807-8-Web-Res.jpg",
       alt: "Property image 26",
-      category: "interior"
+      category: ""
     },
     {
       id: 27,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333750833-Tano-1807-1C-Full-Res.jpg",
       alt: "Property image 27",
-      category: "kitchen"
+      category: ""
     },
     {
       id: 28,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333752209-Tano-1807-1-Web-Res.jpg",
       alt: "Property image 28",
-      category: "bedroom"
+      category: ""
     },
     {
       id: 29,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333752609-Tano-1807-6C-Web-Res.jpg",
       alt: "Property image 29",
-      category: "bathroom"
+      category: ""
     },
     {
       id: 30,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333753137-Tano-1807-23-Web-Res.jpg",
       alt: "Property image 30",
-      category: "exterior"
+      category: ""
     },
     {
       id: 31,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333753582-Tano-1807-10A-Web-Res.jpg",
       alt: "Property image 31",
-      category: "interior"
+      category: ""
     },
     {
       id: 32,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333754028-Tano-1807-18B-Web-Res.jpg",
       alt: "Property image 32",
-      category: "kitchen"
+      category: ""
     },
     {
       id: 33,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333754326-Tano-1807-19-Web-Res.jpg",
       alt: "Property image 33",
-      category: "bedroom"
+      category: ""
     },
     {
       id: 34,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333754703-Tano-1807-1B-Full-Res.jpg",
       alt: "Property image 34",
-      category: "bathroom"
+      category: ""
     },
     {
       id: 35,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333756122-Tano-1807-15A-Web-Res.jpg",
       alt: "Property image 35",
-      category: "exterior"
+      category: ""
     },
     {
       id: 36,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333756522-Tano-1807-2B-Web-Res.jpg",
       alt: "Property image 36",
-      category: "interior"
+      category: ""
     },
     {
       id: 37,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333757147-Tano-1807-22B-Web-Res.jpg",
       alt: "Property image 37",
-      category: "kitchen"
+      category: ""
     },
     {
       id: 38,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333757618-Tano-1807-18-Web-Res.jpg",
       alt: "Property image 38",
-      category: "bedroom"
+      category: ""
     },
     {
       id: 39,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333757949-Tano-1807-14B-Web-Res.jpg",
       alt: "Property image 39",
-      category: "bathroom"
+      category: ""
     },
     {
       id: 40,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333758506-Tano-1807-15B-Web-Res.jpg",
       alt: "Property image 40",
-      category: "exterior"
+      category: ""
     },
     {
       id: 41,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333759026-Tano-1807-6-Web-Res.jpg",
       alt: "Property image 41",
-      category: "interior"
+      category: ""
     },
     {
       id: 42,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333759482-Tano-1807-12-Web-Res.jpg",
       alt: "Property image 42",
-      category: "kitchen"
+      category: ""
     },
     {
       id: 43,
       src: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1761333759925-Tano-1807-21-Web-Res.jpg",
       alt: "Property image 43",
-      category: "bedroom"
+      category: ""
     }
   ];
 
